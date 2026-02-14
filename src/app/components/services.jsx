@@ -40,7 +40,7 @@ export default function MyServices() {
           <Card
             key={index}
             title={card.title}
-            alt={`${title} therapy illustration`}
+            alt={`${card.title} therapy illustration`}
             description={card.description}
             imageSrc={card.imageSrc}
           />
