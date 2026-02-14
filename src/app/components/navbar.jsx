@@ -32,6 +32,7 @@ export default function Navbar() {
         <div className="hidden md:flex gap-8 text-xl">
           <Link href="/blog">Blog</Link>
           <Link href="/contact">Contact</Link>
+          <Link href="/office">Office</Link>
         </div>
 
         {/* Hamburger Button (Mobile Only) */}
@@ -46,6 +47,9 @@ export default function Navbar() {
           </Link>
           <Link href="/contact" onClick={() => setIsOpen(false)}>
             Contact
+          </Link>
+          <Link href="/office" onClick={() => setIsOpen(false)}>
+            Office
           </Link>
         </div>
       )}
