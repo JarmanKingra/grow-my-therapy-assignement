@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 
 const images = [
-  { image: "/blog4.png" },
-  { image: "/image.png" },
-  { image: "/blog1.png" },
-  { image: "/hero.png" },
+  { image: "/social1.png" },
+  { image: "/social2.png" },
+  { image: "/social3.png" },
+  { image: "/social4.png" },
 ];
 
 export default function SocialMedia() {
@@ -22,7 +22,7 @@ export default function SocialMedia() {
             alt="key"
             width={500}
             height={600}
-            className=" w-full aspect-square object-cover"
+            className=" w-full aspect-square object-cover rounded-3xl"
             priority
           />
         ))}
