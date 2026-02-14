@@ -25,11 +25,12 @@ export default function AboutMe() {
   return (
     <section
       className="md:pb-60 py-12 md:py-20 bg-[var(--secondary)] pb-60"
-      aria-labelledby="intro-heading"
+      role="region"
+  aria-labelledby="aboutme-heading"
     >
       <div className="max-w-4xl mx-auto flex flex-col px-6 md:px-12 gap-8">
         <h2
-          id="hero-heading"
+           id="aboutme-heading"
           className="text-2xl md:text-4xl font-extrabold text-center"
         >
           My Professional Background

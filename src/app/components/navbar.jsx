@@ -8,35 +8,19 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // <header className="border" >
-    //   <nav className="max-w-6xl mx-auto grid grid-cols-12 items-center text-[var(--primary)] p-6">
-
-    //     <Link href="/" className="col-span-6 text-xl md:text-3xl">
-    //       Lilac Template
-    //     </Link>
-
-    //     <div className="col-span-6 flex justify-end gap-8 md:text-xl font-normal ">
-    //       <Link href="/blog">Blog</Link>
-    //       <Link href="/contact">Contact</Link>
-    //     </div>
-
-    //   </nav>
-    // </header>
     <header className="relative">
-      <nav className="max-w-6xl mx-auto flex justify-between items-center text-[var(--primary)] p-6">
+      <nav aria-label="Main navigation" className="max-w-6xl mx-auto flex justify-between items-center text-[var(--primary)] p-6">
         <Link href="/" className="text-xl md:text-3xl z-50">
           Dr. Maya Reynolds, PsyD
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 text-xl">
-          <Link href="/blog">Blog</Link>
-          <Link href="/contact">Contact</Link>
-          <Link href="/office">Office</Link>
+          <Link href="/blog" title="Read our blog articles">Blog</Link>
+          <Link href="/contact" title="Contact Dr. Maya Reynolds">Contact</Link>
+          <Link href="/office" title="Office information and location">Office</Link>
         </div>
 
-        {/* Hamburger Button (Mobile Only) */}
-        <button className="md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
+        <button  aria-label="Toggle navigation menu" className="md:hidden z-50" onClick={() => setIsOpen(!isOpen)}>
           ☰
         </button>
       </nav>

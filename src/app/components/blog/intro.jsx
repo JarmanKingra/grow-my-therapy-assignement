@@ -2,7 +2,11 @@ import Image from "next/image";
 
 export default function BlogIntro() {
   return (
-    <section className="grid md:grid-cols-12" aria-labelledby="BlogIntro">
+    <section
+      role="region"
+      aria-labelledby="blogintro-heading"
+      className="grid md:grid-cols-12"
+    >
       <div className="col-span-6 p-8 md:pl-30 place-items-center">
         <Image
           src="/blogIntro.png"
@@ -16,7 +20,7 @@ export default function BlogIntro() {
 
       <div className="col-span-6 flex flex-col justify-center items-center md:items-start p-8 md:pl-0 text-start gap-6">
         <h1
-          id="hero-heading"
+          id="blogintro-heading"
           className=" text-4xl md:text-7xl font-semibold text-center md:text-start"
         >
           Dr. Maya's Blog

@@ -23,6 +23,7 @@ export default function Hero2() {
 
         <Link
           href="/contact"
+          title="Get in touch with Dr. Maya Reynolds for therapy sessions"
           className="border-t hover:bg-[var(--foreground)] hover:text-[var(--secondary)] transition duration-300 w-full flex items-center justify-center order-3 md:order-2"
         >
           <span className="flex items-center gap-2 h-16">GET IN TOUCH <FaArrowRight aria-hidden="true" /></span>

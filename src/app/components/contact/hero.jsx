@@ -3,9 +3,16 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="grid md:grid-cols-12 bg-[var(--foreground-2)] md:p-20 md:flex-row justify-center items-center">
+    <section
+      role="region"
+      aria-labelledby="connect-heading"
+      className="grid md:grid-cols-12 bg-[var(--foreground-2)] md:p-20 md:flex-row justify-center items-center"
+    >
       <div className="col-span-6 place-items-center md:place-items-start">
-        <h1 className=" text-4xl md:text-7xl mt-10 font-semibold  mb-5 md:mb-15">
+        <h1
+          id="connect-heading"
+          className=" text-4xl md:text-7xl mt-10 font-semibold  mb-5 md:mb-15"
+        >
           Let’s Connect
         </h1>
         <p className="text-xl mb-3">Starting therapy is courageous.</p>

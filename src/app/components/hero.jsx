@@ -25,6 +25,7 @@ export default function Hero() {
 
         <Link
           href="/contact"
+           title="Connect with Dr. Maya Reynolds for a therapy session"
           className="border px-6 py-2 flex items-center gap-2 hover:bg-[var(--foreground)] hover:text-white transition duration-300"
         >
           CONNECT TO ME <FaArrowRight aria-hidden="true" />

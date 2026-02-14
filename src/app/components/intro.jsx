@@ -6,10 +6,11 @@ export default function Intro() {
   return (
     <section
       className="grid grid-cols-1 md:grid-cols-12 py-12 md:py-20 bg-[var(--secondary)] overflow-hidden"
-      aria-labelledby="intro-heading"
+       role="region"
+  aria-labelledby="intro-heading"
     >
       <div className="col-span-6 flex flex-col justify-center items-start px-6 py-12 md:p-12 gap-6 order-2 md:order-1">
-        <h2 id="hero-heading" className="text-5xl">
+        <h2 id="intro-heading" className="text-5xl">
           Hi, I’m Dr. Maya Reynolds.
         </h2>
 
@@ -24,6 +25,7 @@ export default function Intro() {
 
           <Link
             href="/contact"
+            title="Chat with Dr. Maya Reynolds for a therapy session"
             className="border text-sm font-semibold py-3 mt-8 md:mt-12 w-30 flex justify-center items-center gap-2 hover:bg-[var(--foreground)] hover:text-[var(--secondary)] transition duration-300"
           >
             LET'S CHAT <FaArrowRight aria-hidden="true" />
