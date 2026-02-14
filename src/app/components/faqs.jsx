@@ -27,7 +27,8 @@ export default function FAQ() {
   return (
     <section
       className="grid grid-cols-1 md:grid-cols-12 py-12 md:py-20"
-      aria-labelledby="intro-heading"
+      role="region"
+  aria-labelledby="faq-heading"
     >
       <div className="col-span-6 px-6 py-12 md:p-12 flex justify-center order-1">
         <Image
@@ -40,7 +41,7 @@ export default function FAQ() {
         />
       </div>
       <div className="col-span-6 flex flex-col justify-center items-start px-6 py-12 md:p-12 gap-6 order-2">
-        <h2 id="hero-heading" className="text-4xl md:text-5xl ">
+        <h2 id="faq-heading"  className="text-4xl md:text-5xl ">
           FAQs
         </h2>
 

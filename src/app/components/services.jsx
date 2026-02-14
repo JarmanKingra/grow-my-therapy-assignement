@@ -25,7 +25,8 @@ export default function MyServices() {
   return (
     <section
       className="px-4 md:px-12 py-12 flex flex-col items-start md:items-center text-left"
-      aria-labelledby="service-heading"
+      role="region"
+  aria-labelledby="service-heading"
     >
       <h2
         id="service-heading"
@@ -39,6 +40,7 @@ export default function MyServices() {
           <Card
             key={index}
             title={card.title}
+            alt={`${title} therapy illustration`}
             description={card.description}
             imageSrc={card.imageSrc}
           />

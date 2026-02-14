@@ -6,6 +6,7 @@ export default function About() {
   return (
     <section
       className="grid grid-cols-1 md:grid-cols-12 mt-12 md:mt-20"
+      role="region"
       aria-labelledby="about-heading"
     >
       <div className="col-span-6 order-1">
@@ -21,7 +22,7 @@ export default function About() {
 
       <div className="col-span-6 flex flex-col justify-between gap-6 bg-[var(--surface-1)] order-2">
         <div className="flex flex-col gap-6 p-8">
-          <h2 id="hero-heading" className="text-3xl md:text-5xl font-semibold">
+          <h2 id="about-heading" className="text-3xl md:text-5xl font-semibold">
             You don’t have to keep holding it all together.
           </h2>
           <p className="text-base md:text-xl">
@@ -44,6 +45,7 @@ export default function About() {
 
         <Link
           href="/contact"
+          title="Work with Dr. Maya Reynolds for therapy sessions"
           className="border-t px-6 hover:bg-[var(--foreground)] hover:text-[var(--secondary)] transition duration-300 w-full flex items-center justify-center"
         >
           <span className="flex items-center gap-2 h-16">
