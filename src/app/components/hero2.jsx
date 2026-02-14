@@ -6,18 +6,18 @@ export default function Hero2() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-12 mb-12 md:mb-20" aria-labelledby="hero-heading">
 
-      <div className="col-span-6 flex flex-col justify-between items-center text-left gap-6 bg-[var(--secondary)] order-2 md:order-1">
-        <div className="flex flex-col gap-6 mt-10 md:mt-40">
+      <div className="col-span-6 flex flex-col justify-between items-center  text-left gap-6 bg-[var(--secondary)] order-2 md:order-1">
+        <div className="flex flex-col gap-6 mt-10 md:mt-40 md:pl-5">
 
           <h2 id="hero-heading" className="text-3xl md:text-5xl font-semibold">
-            Live a fulfilling life.
+            You don’t have to keep pushing through alone.
           </h2>
 
           <p className="text-base md:text-xl">
-          Life can be challenging—especially when you're trying to <br/> balance your personal and professional life. 
+          Many high-achieving adults look “fine” on the outside <br />while quietly battling anxiety, burnout, or constant overthinking.
         </p>
         <p className="text-base md:text-xl">
-          It's easy to feel like you're alone in facing these <br/> challenges, but I want you to know that I'm here to help. 
+          Therapy can be a space to slow down, feel grounded again, <br /> and build a more sustainable way of living and working. 
         </p>
         </div>
 

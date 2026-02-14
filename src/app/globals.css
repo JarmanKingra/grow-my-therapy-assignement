@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 :root {
-    --background: #faf5f0;
-    --foreground: #223614;
-    --foreground-2: #c2bfcb; /*used in contact only*/
-    --primary: #223614;
-    --secondary: #e6e0da;
-    --surface-1: #c3c0cc;
-    --surface-2: #7e7b46;
-  }
+  --background: #cb997e;
+  --foreground: #283618;
+  --foreground-2: #d4a373;
+  --primary: #283618;
+  --secondary: #ddbea9;
+  --surface-1: #faedcd;
+  --surface-2: #d2bba0;
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -16,11 +17,12 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+/*
 
-/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #faf5f0;
     --foreground: #223614;
+    --foreground-2: #c2bfcb; /*used in contact only*/ /*
     --primary: #223614;
     --secondary: #e6e0da;
     --surface-1: #c3c0cc;

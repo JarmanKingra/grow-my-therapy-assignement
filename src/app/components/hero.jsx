@@ -17,11 +17,11 @@ export default function Hero() {
       </div>
 
       <div className="col-span-6 flex flex-col justify-center items-center pb-8 md:p-8  text-center gap-6">
-        <h1 id="hero-heading" className=" text-4xl md:text-7xl font-semibold">
-          Live your life <br /> in full bloom
+        <h1 id="hero-heading" className=" text-3xl md:text-5xl font-semibold">
+          Find steadiness in the midst of anxiety and burnout
         </h1>
 
-        <p className=" text-xl md:text-2xl">Therapy for Adults in Minneapolis, MN.</p>
+        <p className=" text-xl md:text-2xl">Therapy for high-achieving adults in Santa Monica, CA & throughout California</p>
 
         <Link
           href="/contact"

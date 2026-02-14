@@ -22,10 +22,10 @@ export default function Navbar() {
 
     //   </nav>
     // </header>
-    <header className="border relative">
+    <header className="relative">
       <nav className="max-w-6xl mx-auto flex justify-between items-center text-[var(--primary)] p-6">
         <Link href="/" className="text-xl md:text-3xl z-50">
-          Lilac Template
+          Dr. Maya Reynolds, PsyD
         </Link>
 
         {/* Desktop Menu */}

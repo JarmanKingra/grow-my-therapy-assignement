@@ -5,10 +5,21 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 export default function AboutMe() {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const faqs = [
-    { question: "Education", answer: "Answer goes here" },
-    { question: "Licensure", answer: "Answer goes here" },
-    { question: "Certifications", answer: "Answer goes here" },
+  const ProfessionalBackground = [
+    {
+      question: "Education",
+      answer:
+        "Doctor of Psychology (PsyD) in Clinical Psychology, Pepperdine University. Bachelor’s degree in Psychology, University of California, Los Angeles.",
+    },
+    {
+      question: "Licensure",
+      answer: "Licensed Clinical Psychologist in the state of California.",
+    },
+    {
+      question: "Certifications",
+      answer:
+        "EMDR-trained therapist. Advanced training in Cognitive Behavioral Therapy (CBT), trauma-informed care, and mindfulness-based interventions.",
+    },
   ];
 
   return (
@@ -26,7 +37,7 @@ export default function AboutMe() {
 
         <ul className="flex flex-col gap-4 w-full">
           <div className="h-px bg-gray-300 my-4 w-full">
-            {faqs.map((faq, index) => (
+            {ProfessionalBackground.map((faq, index) => (
               <li
                 key={index}
                 className="border-t pt-3 w-full flex flex-col gap-4"

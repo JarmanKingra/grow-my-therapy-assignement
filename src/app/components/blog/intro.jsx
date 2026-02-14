@@ -3,7 +3,6 @@ import Image from "next/image";
 export default function BlogIntro() {
   return (
     <section className="grid md:grid-cols-12" aria-labelledby="BlogIntro">
-      
       <div className="col-span-6 p-8 md:pl-30 place-items-center">
         <Image
           src="/blogIntro.png"
@@ -16,17 +15,21 @@ export default function BlogIntro() {
       </div>
 
       <div className="col-span-6 flex flex-col justify-center items-center md:items-start p-8 md:pl-0 text-start gap-6">
-        <h1 id="hero-heading" className=" text-4xl md:text-7xl font-semibold text-center md:text-start">
-          The Lilac Blog
+        <h1
+          id="hero-heading"
+          className=" text-4xl md:text-7xl font-semibold text-center md:text-start"
+        >
+          Dr. Maya's Blog
         </h1>
 
         <p className=" text-xl md:text-2xl text-center md:text-start">
-          My tiny corner of the internet <br /> where I talk about all things <br /> healing, heart, and <br /> wholeness. 
+          My tiny corner of the internet <br /> where I talk about all things{" "}
+          <br /> anxiety, trauma and <br />
+          burnout.
         </p>
 
         <p className="text-xl md:text-2xl font-semibold">Glad you’re here.</p>
       </div>
-
     </section>
   );
 }

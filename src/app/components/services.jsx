@@ -3,26 +3,26 @@ import Card from "./ServiceCard/card";
 export default function MyServices() {
   const cards = [
     {
-      title: "Self-Esteem",
+      title: "Anxiety & Overthinking",
       description:
-        "Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.",
+        "If your mind rarely slows down and you're constantly bracing for what might go wrong, therapy can help you feel more steady and grounded.",
       imageSrc: "/serviceCard1.png",
     },
     {
-      title: "Relationships",
+      title: "Trauma & EMDR",
       description:
-        "Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.",
+        "We’ll work at a pace that feels safe, helping you process difficult experiences while building stability and nervous system regulation.",
       imageSrc: "/serviceCard2.png",
     },
     {
-      title: "Burnout",
+      title: "Burnout & Perfectionism",
       description:
-        "Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.",
+        "For high-achieving professionals who feel exhausted from internal pressure, therapy can help you reconnect and build a more sustainable rhythm.",
       imageSrc: "/serviceCard3.png",
     },
   ];
 
-   return (
+  return (
     <section
       className="px-4 md:px-12 py-12 flex flex-col items-start md:items-center text-left"
       aria-labelledby="service-heading"
