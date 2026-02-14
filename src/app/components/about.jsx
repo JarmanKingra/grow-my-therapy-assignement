@@ -22,22 +22,23 @@ export default function About() {
       <div className="col-span-6 flex flex-col justify-between gap-6 bg-[var(--surface-1)] order-2">
         <div className="flex flex-col gap-6 p-8">
           <h2 id="hero-heading" className="text-3xl md:text-5xl font-semibold">
-            You don’t have to do this all alone.
+            You don’t have to keep holding it all together.
           </h2>
           <p className="text-base md:text-xl">
-            If you are facing any of these, there’s hope:
+            You might recognize yourself in some of these experiences:
           </p>
 
           <ul className="list-disc text-base md:text-xl pl-6 md:pl-8 space-y-2">
-            <li>Persistent feelings of sadness or hopelessness</li>
-            <li>Trouble focusing or making decisions</li>
-            <li>Difficulty maintaining relationships</li>
-            <li>Feeling constantly exhausted or unmotivated</li>
-            <li>A pervasive sense of being overwhelmed</li>
+            <li>Constant overthinking or difficulty turning your mind off</li>
+            <li>Tension in your body, trouble sleeping, or feeling on edge</li>
+            <li>High internal pressure to perform or be “perfect”</li>
+            <li>Feeling functional on the outside but overwhelmed inside</li>
+            <li>
+              Lingering effects of past experiences impacting your present
+            </li>
           </ul>
           <p className="text-xl">
-            With empathy and guidance, we'll work together to navigate the
-            challenges life throws your way.
+            Therapy can help you feel more regulated, clear, and connected to yourself again.
           </p>
         </div>
 

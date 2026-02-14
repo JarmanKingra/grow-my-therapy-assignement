@@ -3,14 +3,15 @@ import Image from "next/image";
 
 export default function Address() {
   return (
-    <section className="grid md:grid-cols-12 bg-[var(--surface-2)] flex-row p-5 md:p-10 text-[var(--background)] justify-center place-content-start md:items-center">
+    <section className="grid md:grid-cols-12 bg-[var(--surface-2)] flex-row p-5 md:p-10 text-[var(--primary)] justify-center place-content-start md:items-center">
       <div className="col-span-6">
         <div>
           <h2 className="text-3xl md:text-4xl mb-6 md:mb-10 font-semibold">
-            My Office
+            Office Location
           </h2>
           <p className="md:text-xl">
-            123 Example Street <br /> Minneapolis, MN
+            123th Street 45 W <br />
+            Santa Monica, CA 90401
           </p>
         </div>
 

@@ -4,15 +4,25 @@ import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 export default function FAQ() {
-
   const [openIndex, setOpenIndex] = useState(null);
 
-
   const faqs = [
-  { question: "Do you take insurance?", answer: "Answer goes here" },
-  { question: "What are your rates?", answer: "Answer goes here" },
-  { question: "Do you have any openings?", answer: "Answer goes here" },
-];
+    {
+      question: "Do you take insurance?",
+      answer:
+        "I am an out-of-network provider and do not bill insurance directly. Upon request, I can provide a superbill that you may submit to your insurance company for potential reimbursement.",
+    },
+    {
+      question: "What are your rates?",
+      answer:
+        "My standard fee for a 50-minute individual therapy session is $225. I can discuss limited sliding scale options based on availability.",
+    },
+    {
+      question: "Do you offer in-person or virtual sessions?",
+      answer:
+        "I offer in-person sessions in Santa Monica and secure telehealth sessions for clients located anywhere in California.",
+    },
+  ];
 
   return (
     <section
@@ -36,30 +46,32 @@ export default function FAQ() {
 
         <ul className="flex flex-col gap-4 w-full">
           <div className="">
-          {faqs.map((faq, index) => (
-            
-
-            <li key={index} className="border-t border-b py-4 w-full flex flex-col">
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="flex items-start gap-4 text-3xl cursor-pointer text-left"
+            {faqs.map((faq, index) => (
+              <li
+                key={index}
+                className="border-t border-b py-4 w-full flex flex-col"
               >
-                {openIndex === index ? <FaMinus /> : <FaPlus />}
-                <span>{faq.question}</span>
-              </button>
+                <button
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                  className="flex items-start gap-4 text-3xl cursor-pointer text-left"
+                >
+                  {openIndex === index ? <FaMinus /> : <FaPlus />}
+                  <span>{faq.question}</span>
+                </button>
 
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index
-                    ? "max-h-96 opacity-100"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-                <p className="text-base md:text-lg pt-4">{faq.answer}</p>
-              </div>
-            </li>
-            
-          ))}
+                <div
+                  className={`overflow-hidden transition-all duration-300 ${
+                    openIndex === index
+                      ? "max-h-96 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <p className="text-base md:text-lg pt-4">{faq.answer}</p>
+                </div>
+              </li>
+            ))}
           </div>
         </ul>
       </div>

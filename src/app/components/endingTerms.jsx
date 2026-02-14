@@ -9,12 +9,12 @@ export default function EndingTerms() {
           <p className="flex flex-wrap justify-center md:gap-6 font-semibold underline text-center">
             <a href="*">Privacy & Cookies Policy</a>
             <a href=""> Good Faith Estimate</a>
-            <a href="">Website Terms & Conditions</a>
+            <a href="">Terms & Conditions</a>
             <a href="">Disclaimer</a>
           </p>
         </div>
 
-        <p>All Rights Reserved © 2024 Your Business Name Here, LLC.</p>
+        <p>© {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All Rights Reserved.</p>
       </div>
     </section>
   );
